@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfGestionContra.Inicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGestionContra"
+        mc:Ignorable="d"
+        Title="Inicio" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="530,378,0,0" VerticalAlignment="Top" Click="btAgregar_Click" FontSize="18"/>
+        <DataGrid x:Name="dgTabla" ItemsSource="{Binding Path=listaSit}" Margin="84,77,84,116" AutoGenerateColumns="True" />
+        <Label x:Name="lblTitulo" Content="Inicio" HorizontalAlignment="Center" Margin="0,27,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="18"/>
+        <Button x:Name="btSalir" Content="Salir" HorizontalAlignment="Left" Margin="647,378,0,0" VerticalAlignment="Top" Click="btSalir_Click" FontSize="18"/>
+        <Button x:Name="btAgregar_Copy" Content="Agregar" HorizontalAlignment="Left" Margin="530,378,0,0" VerticalAlignment="Top" Click="btAgregar_Click" FontSize="18"/>
+        <Button x:Name="btModificar" Content="Modificar" HorizontalAlignment="Left" Margin="400,378,0,0" VerticalAlignment="Top" Click="btModificar_Click" FontSize="18"/>
+        <Button x:Name="btEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="277,378,0,0" VerticalAlignment="Top" Click="btEliminar_Click" FontSize="18"/>
+        <Button x:Name="btModConf" Content="Confirmar" HorizontalAlignment="Left" Margin="633,335,0,0" VerticalAlignment="Top" FontSize="18" Click="btModConf_Click" Visibility="Hidden" />
+        <TextBox x:Name="tbModSitio" HorizontalAlignment="Left" Margin="84,336,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" Visibility="Hidden"/>
+        <TextBox x:Name="tbModContra" HorizontalAlignment="Left" Margin="240,336,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18" Visibility="Hidden"/>
+        <DatePicker x:Name="dpModFecha" HorizontalAlignment="Left" Margin="398,333,0,0" VerticalAlignment="Top" FontSize="18" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
